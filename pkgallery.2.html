@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pookie-141911</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #DAD7CD;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #3A5A40; /* Deep green for navbar */
+        padding: 0.5em 1em;
+        color: #DAD7CD; /* Light text for contrast */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .brand,
+    .navbar .brand-right {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.2em; /* Spacing between letters */
+        color: #FFFFFF;
+    }
+
+    .navbar .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1.5em; /* Increased spacing between items */
+    }
+
+    .navbar .nav-links li {
+        display: inline;
+    }
+
+    .navbar .nav-links a {
+        text-decoration: none;
+        color: #DAD7CD;
+        font-size: 1em;
+        display: block;
+        text-align: center;
+        padding: 0.5em 1em;
+        border: 2px solid #DAD7CD;
+        border-radius: 4px;
+        width: 5cm;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar .nav-links a:hover {
+        background-color: #A3B18A;
+        color: #344E41;
+    }
+
+    .collage-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 120px 20px 20px; /* Added top padding to account for the fixed navbar */
+      transform: translateX(-150px);
+    }
+
+    .collage {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px; /* Space between images */
+      width: 100%;
+      max-width: 800px;
+    }
+
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    .collage img {
+      width: 10cm;
+      height: 10cm;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+
+    figcaption {
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #555;
+      text-align: justify;
+    }
+
+    .last-row {
+      grid-column: 2 / span 1;
+      justify-self: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+      <div class="brand">P O O K I E</div>
+      <ul class="nav-links">
+          <li><a href="pk.html">HOME</a></li>
+          <li><a href="pkgallery.2.html">GALLERY</a></li>
+          <li><a href="#">ABOUT</a></li>
+      </ul>
+      <div class="brand-right">141911</div>
+  </nav>
+
+  <div class="collage-container">
+    <div class="collage">
+      <figure>
+        <img src="1.jpg" alt="Image 1">
+        <figcaption>This picture was taken the Saturday he showed me the pond on campus and then he told my uber driver to get me home safely.</figcaption>
+      </figure>
+      <figure>
+        <img src="2.jpg" alt="Image 2">
+        <figcaption>I was caught lacking here by my friends because his phone was in my pocket and I had his bag after I told them that ke xap ka yena.</figcaption>
+      </figure>
+      <figure>
+        <img src="3.jpg" alt="Image 3">
+        <figcaption>After Watching Inside Out. He thought I locked myself in the bathroom or something but I was just taking pics in his jersey.</figcaption>
+      </figure>
+      <figure>
+        <img src="4.jpg" alt="Image 4">
+        <figcaption>No Face No Case</figcaption>
+      </figure>
+      <figure>
+        <img src="5.jpg" alt="Image 5">
+        <figcaption>Caught Lacking Again. "International Call"</figcaption>
+      </figure>
+      <figure>
+        <img src="6.jpg" alt="Image 6">
+        <figcaption>Wore His Jacket On Campus</figcaption>
+      </figure>
+      <figure class="last-row">
+        <img src="7.jpg" alt="Image 7">
+        <figcaption>Ellie Is FIIINE.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+</body>
+</html>
